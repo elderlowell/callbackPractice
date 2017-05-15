@@ -39,6 +39,11 @@ first(names, function(firstName){
 
   //Code Here
 
+  function last(namesArray, callback) {
+    var i = namesArray.length - 1;
+    callback(namesArray[i]);
+  }
+
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
 });
