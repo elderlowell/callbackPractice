@@ -53,6 +53,9 @@ last(names, function(lastName){
 // 3. Write a function called multiply that multiplies two numbers using a callback function.
 
   //Code Here
+  function multiply(num1, num2, callback) {
+    callback(num1 * num2);
+  }
 
 
 multiply(4, 3, function(answer){
