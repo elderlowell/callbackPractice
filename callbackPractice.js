@@ -68,6 +68,15 @@ multiply(4, 3, function(answer){
 // If it does, return true using the callback, if not return false.
 
   //Code Here
+  function contains(namesArray, nameToCheck, callback) {
+    var result = false;
+    for (var i = 0; i < namesArray.length; i++) {
+      if (nameToCheck === namesArray[i]) {
+        result = true;
+      }
+    }
+    callback(result);
+  };
 
 contains(names, 'Colt', function(result){
   if(result === true){
